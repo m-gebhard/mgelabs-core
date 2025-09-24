@@ -1,0 +1,11 @@
+{
+  "name": "com.mgelabs.core",
+  "version": "1.0.0",
+  "displayName": "MGeLabs Core",
+  "description": "The core module of the MGeLabs packages. It contains helpers and interfaces for communication through different systems.",
+  "unity": "2023.1",
+  "author": {
+    "name": "Marius Gebhard",
+    "url": "https://github.com/m-gebhard"
+  }
+}
