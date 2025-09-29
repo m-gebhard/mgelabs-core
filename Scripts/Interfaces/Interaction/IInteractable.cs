@@ -57,14 +57,16 @@ namespace MGeLabs.Core
 
         /// <summary>
         /// Called when the interactable object is interacted with.
+        /// It's the last method called during the interaction process if <see cref="InteractionTime"/> > 0.
         /// </summary>
+        /// <remarks>Execution order: OnInteractionStart -> OnInteractionFinished -> OnInteract</remarks>
         /// <param name="interactor">The interactor performing the interaction.</param>
         /// <returns>Returns true if the interaction was successful, false otherwise.</returns>
         public bool OnInteract(IInteractor interactor);
 
         /// <summary>
-        /// Called when <see cref="InteractionTime"/> is > 0 and the interaction with the object finished.
-        /// At this time the execution of OnInteract has finished.
+        /// Called when <see cref="InteractionTime"/> is > 0 and the interaction with the object is finished.
+        /// This is called before <see cref="OnInteract(IInteractor)"/>.
         /// Can be implemented to perform animations, transitions etc. for the interaction end.
         /// </summary>
         /// <param name="interactor">The interactor initiating the interaction.</param>
