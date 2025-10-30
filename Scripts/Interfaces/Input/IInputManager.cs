@@ -30,7 +30,7 @@ namespace MGeLabs.Core
 
         #endregion
 
-        public event Action<string> OnControlsChanged;
+        public event Action<string> OnInputControlsChanged;
 
         public void ResetInputs();
     }
