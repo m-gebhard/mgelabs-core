@@ -1,6 +1,6 @@
 {
   "name": "com.mgelabs.core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "MGeLabs Core",
   "description": "The core module of the MGeLabs packages. It contains helpers and interfaces for communication through different systems.",
   "unity": "2023.1",
