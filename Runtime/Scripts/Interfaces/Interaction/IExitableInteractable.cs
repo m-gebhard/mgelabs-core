@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace MGeLabs.Core
 {
@@ -8,10 +9,10 @@ namespace MGeLabs.Core
     public interface IExitableInteractable : IInteractable
     {
         /// <summary>
-        /// Gets the IEnableable of the camera of the interactable.
-        /// When interaction starts, the IEnableable will be enabled, and when interaction ends, it will be disabled.
+        /// Gets the GameObject of the camera of the interactable.
+        /// When interaction starts, the GameObject will be activated, and when interaction ends, it will be deactivated.
         /// </summary>
-        public IEnableable Camera => null;
+        public GameObject Camera => null;
 
         /// <summary>
         /// Indicates whether the interactor's enableable state can be toggled.
